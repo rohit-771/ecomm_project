@@ -1,0 +1,377 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #f9f9f9, #ffe0e0);
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e6005c;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: #e6005c;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #e6005c;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  background: #e6005c;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #ffb6c1, #ffe6e6);
+  color: #222;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #e6005c;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #e6005c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ff3377;
+}
+
+/* CATEGORY SECTION */
+.categories {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category {
+  width: 180px;
+  height: 180px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* PRODUCTS PAGE */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  gap: 25px;
+}
+
+.product-card {
+  width: 250px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+}
+
+.product-card .price {
+  color: #e6005c;
+  font-weight: bold;
+}
+
+.product-card .rating {
+  color: #ff9900;
+  font-size: 0.9rem;
+}
+
+/* CART */
+.cart-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.cart-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.cart-table th {
+  background: #e6005c;
+  color: white;
+}
+
+/* PROFILE */
+.profile-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.profile-card {
+  background: white;
+  display: inline-block;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* SIGNUP FORM */
+.auth-form {
+  background: white;
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-form button {
+  background: #e6005c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  color: #555;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+}
+
+.offerposter img{
+  background-position: center;
+  width: 100%;
+}
+
+
+/* CONTACT PAGE */
+.contact-section {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe6ec 50%, #e6f3ff 100%);
+}
+
+.contact-section h2 {
+  color: #e6005c;
+  margin-bottom: 40px;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(230,0,92,0.09);
+  padding: 40px 0;
+}
+
+.contact-form {
+  flex: 1 1 320px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 7px 0;
+  font-weight: 500;
+  color: #e6005c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  background: #f6f6f7;
+  margin-bottom: 8px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #e6005c;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  width: 100%;
+  margin-top: 18px;
+}
+
+/* Contact details section */
+.contact-details {
+  flex: 1 1 260px;
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px 30px;
+  background: #fff5fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(230,0,92,0.07);
+}
+
+.contact-details h3 {
+  color: #e6005c;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-details p, .contact-details a {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media(max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .contact-details, .contact-form {
+    max-width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
+
+
+
