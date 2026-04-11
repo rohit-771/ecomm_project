@@ -18,7 +18,7 @@ body {
   align-items: center;
   background: white;
   padding: 15px 40px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -33,12 +33,12 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #444;
-  margin: 0 15px;
-  font-weight: 500;
+  margin: 0 50px;
+  font-weight: 550;
   transition: color 0.3s;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover {
   color: #e6005c;
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translatey(-5px);
 }
 
 .product-card img {
@@ -371,6 +371,34 @@ footer {
     max-width: 100%;
     margin: 20px 0 0 0;
   }
+}
+
+
+.qty-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: #e6005c;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-input {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
 }
 
 
