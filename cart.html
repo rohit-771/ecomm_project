@@ -25,16 +25,38 @@
     <tr>
       <th>Product</th><th>Price</th><th>Qty</th><th>Total</th>
     </tr>
-    <tr>
-      <td>Wireless Headphones</td><td>₹129</td><td>2</td><td>₹258</td>
+    <tr class="cart-item" data-price="129">
+      <td>Wireless Headphones</td>
+      <td>₹129</td>
+      <td>
+        <div class="qty-controls">
+          <button class="qty-btn minus">-</button>
+          <input type="number" class="qty-input" value="2" min="1">
+          <button class="qty-btn plus">+</button>
+        </div>
+      </td>
+      <td class="item-total">₹258</td>
     </tr>
-    <tr>
-      <td>Smartphone X</td><td>₹699</td><td>1</td><td>₹699</td>
+    <tr class="cart-item" data-price="699">
+      <td>Smartphone X</td>
+      <td>₹699</td>
+      <td>
+        <div class="qty-controls">
+          <button class="qty-btn minus">-</button>
+          <input type="number" class="qty-input" value="1" min="1">
+          <button class="qty-btn plus">+</button>
+        </div>
+      </td>
+      <td class="item-total">₹699</td>
     </tr>
   </table>
-  <p><strong>Grand Total: ₹957</strong></p>
+  <p><strong>Grand Total: ₹<span id="grand-total">957</span></strong></p>
   <a href="products.html" class="btn">Continue Shopping</a>
 </section>
-  
+
+
+
+<script src="/script.js"></script>
+
 </body>
 </html>
